@@ -32,5 +32,21 @@ namespace EMS.Business.Services
         {
             return await _repository.GetEmployeeByIdAsync(id);
         }
+
+        public async Task<IEnumerable<Address>> GetAddressesByEmployeeIdAsync(int employeeId)
+        {
+            return await _repository.GetAddressesByEmployeeIdAsync(employeeId);
+        }
+
+        public async Task<bool> UpdateAddressAsync(Address updatedAddress)
+        {
+            return await _repository.UpdateAddressAsync(updatedAddress);
+        }
+
+        public async Task<IEnumerable<Employee>> GetEmployeesByManagerIdAsync(int managerId)
+        {
+            return await _repository.GetEmployeesByManagerIdAsync(managerId);
+        }
+
     }
 }

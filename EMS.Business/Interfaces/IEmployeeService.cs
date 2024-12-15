@@ -12,5 +12,11 @@ namespace EMS.Business.Interfaces
         Task<Employee> CreateEmployeeAsync(Employee employee);
         Task<IEnumerable<Employee>> GetAllEmployeesAsync();
         Task<Employee> GetEmployeeByIdAsync(int id);
+
+        Task<IEnumerable<Address>> GetAddressesByEmployeeIdAsync(int employeeId);
+
+        Task<bool> UpdateAddressAsync(Address updatedAddress);
+
+        Task<IEnumerable<Employee>> GetEmployeesByManagerIdAsync(int managerId);
     }
 }

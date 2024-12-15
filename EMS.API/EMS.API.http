@@ -1,6 +1,6 @@
 @EMS.API_HostAddress = http://localhost:5289
 
-GET {{EMS.API_HostAddress}}/weatherforecast/
+GET {{EMS.API_HostAddress}}/Employee/
 Accept: application/json
 
 ###

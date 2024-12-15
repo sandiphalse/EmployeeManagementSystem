@@ -12,5 +12,10 @@ namespace EMS.Repository.Interfaces
         Task<Employee> AddEmployeeAsync(Employee employee);
         Task<IEnumerable<Employee>> GetAllEmployeesAsync();
         Task<Employee> GetEmployeeByIdAsync(int id);
+
+        Task<IEnumerable<Address>> GetAddressesByEmployeeIdAsync(int employeeId);
+
+        Task<bool> UpdateAddressAsync(Address updatedAddress);
+        Task<IEnumerable<Employee>> GetEmployeesByManagerIdAsync(int managerId);
     }
 }
